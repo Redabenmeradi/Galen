@@ -1,0 +1,24 @@
+@objects
+  login-box id login-box
+  sign-up  id sign-up
+  sign-in id sign-in
+
+= Test Whole Component =
+
+  login-box:
+      visible
+
+  @on mobile
+    login-box:
+        visible
+
+    sign-up:
+        inside login-box
+    sign-in:
+        inside login-box
+
+  @on tablet
+    login-box:
+        visible
+    sign-up:
+        aligned horizontally all sign-in

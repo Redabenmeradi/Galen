@@ -1,0 +1,18 @@
+@@ groups portrait, landscape, desktop, mobile, tablet
+@@ Set
+    page_name       example.html
+    page_url        http://localhost:8000/${page_name}
+    page_spec_url   ../Specs/spec-example.gspec
+@@ table devices
+    | deviceName             | size       | tag                 |
+    | iphone5                | 320x568    | portrait, mobile    |
+    | iphone5-horizontal     | 568x320    | landscape, mobile   |
+    | iphone6plus            | 414x736    | portrait, mobile    |
+    | iphone6plus-horizontal | 736x414    | landscape, mobile   |
+    | ipad                   | 768x1024   | tablet              |
+
+@@ parameterized using devices
+
+${page_name} ${deviceName} devices ${full_name}
+    ${page_url} ${size}
+        check ${page_spec_url} --include "${deviceName}" --include ${tag}
