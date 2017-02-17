@@ -15,4 +15,4 @@
 
 ${page_name} ${deviceName} devices ${full_name}
     ${page_url} ${size}
-        check ${page_spec_url} --include "${deviceName}" --include ${tag}
+        check ${page_spec_url} --include "${deviceName}" --include "${tag}"
