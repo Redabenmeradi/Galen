@@ -5,9 +5,6 @@
 
 = Test Whole Component =
 
-  login-box:
-      visible
-
   @on mobile
     login-box:
         visible
