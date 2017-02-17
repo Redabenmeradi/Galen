@@ -5,7 +5,7 @@
 
 = Test Whole Component =
 
-  @on mobile
+
     login-box:
         visible
 
@@ -14,7 +14,7 @@
     sign-in:
         inside login-box
 
-  @on tablet
+
     login-box:
         visible
     sign-up:
