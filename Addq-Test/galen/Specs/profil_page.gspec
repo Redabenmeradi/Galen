@@ -1,0 +1,18 @@
+
+@objects
+    root                #login
+    username_textfield  #UserName
+    password_textfield  #Password
+    login_button        id btn-login
+    new_pwd             .mr0
+
+= Login box =
+    root:
+      visible
+      centered horizontally inside viewport
+
+= Styling =
+    login_button:
+      visible
+      text is "Logga in"
+      left-of new_pwd 8px

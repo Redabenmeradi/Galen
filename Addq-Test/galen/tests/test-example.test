@@ -1,8 +1,8 @@
 @@ groups portrait, landscape, desktop, mobile, tablet
 @@ Set
-    page_name       example.html
-    page_url        http://localhost:8000/${page_name}
-    page_spec_url   ../Specs/spec-example.gspec
+    page_name       cinode
+    page_url        https://app.cinode.com/Login?
+    page_spec_url   ../Specs/loginPage.gspec
 @@ table devices
     | deviceName             | size       | tag                 |
     | iphone5                | 320x568    | portrait, mobile    |
