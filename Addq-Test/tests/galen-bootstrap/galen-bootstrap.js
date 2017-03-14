@@ -1,9 +1,7 @@
-load("basics.js");
-load("devices.js");
-
 importClass(org.apache.commons.lang3.StringEscapeUtils);
 
-
+load("basics.js");
+load("devices.js");
 
 var $galen = {
     settings: {
@@ -35,7 +33,6 @@ var $galen = {
     }
 };
 
-
 function openDriverForDevice(device, url) {
     var fullUrl = null;
     if (url !== null) {
@@ -58,7 +55,6 @@ function openDriverForDevice(device, url) {
     var driver = device.initDriver(fullUrl);
     return driver;
 }
-
 
 afterTest(function (test) {
     var device = session.get("device");

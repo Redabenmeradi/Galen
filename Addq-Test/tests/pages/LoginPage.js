@@ -1,5 +1,4 @@
 
-
 this.LoginPage = $page("Login page", {
   email: "id: UserName", // id locator
   password: "id: Password", // id locator
