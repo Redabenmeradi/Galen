@@ -19,9 +19,15 @@ galen -v
 ## Install on Windows:
 At the moment there is no installer for Windows. In order to make galen.bat script accessible in your command line you need to manually add it to your Path variable. There is a good article explaining [how to configure Galen in Windows](http://mindengine.net/post/2014-01-08-configuring-galen-framework-for-windows/#.WMfn1BIrJjA)
 
+<hr></hr>
 
+#### Running the Test
+1. First you need to start a simple http server, go to ``../Galen/Addq-Test/Page`` and run 
+```
+python -m SimpleHTTPServer 8000
+``` 
 
-<br>Running the Test:<br>
-*First go to ..Galen/Addq-Test/Page and run ``python -m SimpleHTTPServer 8000`` to start a simple http server<br>
-*Then in another terminal window/tab go to ``Galen/Addq-Test/galen/tests``<br> 
-and run this command line``$ galen test test-example.test --htmlreport ../reports`` 
+2. Then in another terminal window/tab go to ``Galen/Addq-Test/galen/tests`` and run this command line
+```
+galen test test-example.test --htmlreport ../reports
+``` 
